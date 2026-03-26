@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+}
+
+.bg-dots {
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(#1f1f1f 1px, transparent 1px);
+  background-size: 24px 24px;
+  z-index: -1;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 40px 8%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #bbb;
+}
+
+nav a:hover {
+  color: #00f5c4;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  gap: 40px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 55px;
+}
+
+.hero-content span {
+  color: #00f5c4;
+}
+
+.intro {
+  margin: 20px 0;
+  color: #aaa;
+}
+
+.cta {
+  padding: 12px 25px;
+  border: 1px solid #00f5c4;
+  color: #00f5c4;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.cta:hover {
+  background: #00f5c4;
+  color: black;
+}
+
+.hero-img {
+  position: absolute;
+  right: 8%;
+  top: 140px; /* 👈 is value ko adjust kar */
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00ffd5;
+  box-shadow: 0 0 40px rgba(0, 255, 213, 0.6);
+}
+
+.profile-img:hover {
+  transform: scale(1.08);
+}
+
+.section {
+  padding: 80px 8%;
+}
+
+.section h2 {
+  color: #00f5c4;
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  padding: 20px;
+  border: 1px solid #222;
+  border-radius: 10px;
+}
+
+.project-card:hover {
+  border-color: #00f5c4;
+}
+
+.project-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #00f5c4;
+  padding: 8px 12px;
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+@media(max-width:768px){
+  .hero-wrapper{
+    flex-direction: column;
+  }
+}
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+}
