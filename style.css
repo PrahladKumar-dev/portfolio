@@ -158,42 +158,51 @@ footer {
   background: #000;
   z-index: -1;
 }
-/* 📱 MOBILE RESPONSIVE FIX */
+/* 🔥 FINAL MOBILE FIX (STRONG) */
 @media (max-width: 768px) {
-  
+
   .hero-wrapper {
-    flex-direction: column;
-    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .hero-content {
+    width: 100% !important;
+    text-align: center !important;
   }
 
   .hero-img {
-    margin-top: 20px;
+    position: static !important;
+    margin-top: 20px !important;
   }
 
   .profile-img {
-    width: 200px;   /* image chhota */
-    height: 200px;
+    width: 180px !important;
+    height: 180px !important;
+    display: block;
+    margin: 0 auto;
   }
 
+  /* TEXT SIZE FIX */
   .hero-content h2 {
-    font-size: 22px;
+    font-size: 20px !important;
   }
 
   .intro {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
-  nav ul {
-    display: none; /* optional (menu hide mobile me) */
-  }
-
+  /* BUTTON FIX */
   .buttons {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
   }
-}
-.profile-img {
-  max-width: 100%;
-  border-radius: 50%;
+
+  /* NAV FIX */
+  nav ul {
+    display: none;
+  }
 }
