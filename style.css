@@ -158,9 +158,9 @@ footer {
   background: #000;
   z-index: -1;
 }
-/* 🔥 FINAL MOBILE FIX (STRONG) */
 @media (max-width: 768px) {
 
+  /* LAYOUT FIX */
   .hero-wrapper {
     display: flex !important;
     flex-direction: column !important;
@@ -184,7 +184,7 @@ footer {
     margin: 0 auto;
   }
 
-  /* TEXT SIZE FIX */
+  /* TEXT */
   .hero-content h2 {
     font-size: 20px !important;
   }
@@ -193,7 +193,7 @@ footer {
     font-size: 14px !important;
   }
 
-  /* BUTTON FIX */
+  /* BUTTON */
   .buttons {
     display: flex;
     flex-direction: column;
@@ -201,7 +201,7 @@ footer {
     align-items: center;
   }
 
-  /* NAV FIX */
+  /* NAV */
   nav ul {
     display: none;
   }
